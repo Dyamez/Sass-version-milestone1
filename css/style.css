@@ -1,0 +1,101 @@
+@keyframes smoothmotion {
+  0% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: -10000px;
+  }
+}
+#muteButton {
+  height: 30px;
+  width: 100px;
+}
+
+body {
+  text-align: center;
+  background-image: url("../assets/background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  color: white;
+}
+
+#etoNa img,
+#tangero img {
+  height: 200px;
+  width: 140px;
+  margin: 1px;
+}
+
+#umpisa {
+  width: 230px;
+  height: 80px;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+#kuha {
+  width: 200px;
+  height: 70px;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+#f5 {
+  height: 40px;
+  width: 200px;
+  color: black;
+  font-weight: bold;
+}
+
+#sugarol {
+  color: rgb(236, 230, 64);
+}
+
+#kanya {
+  color: black;
+  padding-top: 10px;
+}
+
+#iyo {
+  color: black;
+}
+
+#sumaTangeroTutal {
+  color: rgb(197, 20, 20);
+  font-size: 40px;
+  font-family: "Impact", Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+#barahaKo {
+  color: rgb(197, 20, 20);
+  height: 30px;
+  font-size: 40px;
+  font-family: "Impact", Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.rolling {
+  height: 200px;
+  width: 3440px;
+  margin-bottom: 1px;
+}
+
+.gulong {
+  animation: smoothmotion 30s linear infinite;
+}
+
+#chip {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  z-index: -1;
+}
+
+#chip2 {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  z-index: -1;
+}
+
+/*# sourceMappingURL=style.css.map */

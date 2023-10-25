@@ -1,0 +1,142 @@
+// Variables
+$button-height: 30px;
+$button-width: 100px;
+$text-align: center;
+$background-image: url("../assets/background.jpg");
+$background-repeat: no-repeat;
+$background-attachment: fixed;
+$background-size: 100% 100%;
+$img-height: 200px;
+$img-width: 140px;
+$img-margin: 1px;
+$umpisa-width: 230px;
+$umpisa-height: 80px;
+$umpisa-font-size: 25px;
+$kuha-width: 200px;
+$kuha-height: 70px;
+$kuha-font-size: 25px;
+$f5-height: 40px;
+$f5-width: 200px;
+$f5-font-weight: bold;
+$sugarol-color: rgb(236, 230, 64);
+$kanya-color: black;
+$sumaTangeroTutal-color: rgb(197, 20, 20);
+$sumaTangeroTutal-font-size: 40px;
+$sumaTangeroTutal-font-family: "Impact", Haettenschweiler, "Arial Narrow Bold",
+  sans-serif;
+$barahaKo-color: rgb(197, 20, 20);
+$barahaKo-height: 30px;
+$barahaKo-font-size: 40px;
+$barahaKo-font-family: "Impact", Haettenschweiler, "Arial Narrow Bold",
+  sans-serif;
+
+// Mixins
+@mixin img-size() {
+  height: $img-height;
+  width: $img-width;
+  margin: $img-margin;
+}
+
+// Animation
+@keyframes smoothmotion {
+  0% {
+    margin-left: 0px;
+  }
+
+  100% {
+    margin-left: -10000px;
+  }
+}
+
+// Styles
+#muteButton {
+  height: $button-height;
+  width: $button-width;
+}
+
+body {
+  text-align: $text-align;
+  background-image: $background-image;
+  background-repeat: $background-repeat;
+  background-attachment: $background-attachment;
+  background-size: $background-size;
+  color: white;
+}
+
+#etoNa img,
+#tangero img {
+  @include img-size();
+}
+
+#umpisa {
+  width: $umpisa-width;
+  height: $umpisa-height;
+  font-size: $umpisa-font-size;
+  margin-bottom: 10px;
+}
+
+#kuha {
+  width: $kuha-width;
+  height: $kuha-height;
+  font-size: $kuha-font-size;
+  margin-bottom: 10px;
+}
+
+#f5 {
+  height: $f5-height;
+  width: $f5-width;
+  color: black;
+  font-weight: $f5-font-weight;
+}
+
+#sugarol {
+  color: $sugarol-color;
+}
+
+#kanya {
+  color: $kanya-color;
+  padding-top: 10px;
+}
+
+#iyo {
+  color: black;
+}
+
+#sumaTangeroTutal {
+  color: $sumaTangeroTutal-color;
+  font-size: $sumaTangeroTutal-font-size;
+  font-family: $sumaTangeroTutal-font-family;
+}
+
+#barahaKo {
+  color: $barahaKo-color;
+  height: $barahaKo-height;
+  font-size: $barahaKo-font-size;
+  font-family: $barahaKo-font-family;
+}
+
+.rolling {
+  height: 200px;
+  width: 3440px;
+  margin-bottom: 1px;
+}
+
+.gulong {
+  animation: smoothmotion 30s linear infinite;
+}
+
+// #chip
+#chip {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  z-index: -1;
+}
+
+// #chip2
+#chip2 {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  z-index: -1;
+}
